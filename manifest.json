@@ -1,14 +1,24 @@
+
 {
+  "id": "./",
   "name": "Xander",
   "short_name": "Xander",
   "description": "The Future of Tech Lies in Our Hands",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f8faf9",
   "theme_color": "#22c55e",
-  "orientation": "portrait",
   "icons": [
-    { "src": "/images/xander-logo.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/images/xander-logo.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "./images/xander-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/xander-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
