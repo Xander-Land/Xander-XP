@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xander | Development Society Team Dashboard</title>
+<meta name="description" content="Meet the Xander development society. Live profiles of every team member, with links to their portfolios and GitHub.">
+<meta property="og:title" content="Xander | Development Society">
+<meta property="og:description" content="Live team dashboard: profiles, portfolios and GitHub activity of the Xander developers.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/xander-logo.png">
+<meta name="theme-color" content="#0a0d14">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bg"></div>
+<div id="hacker" aria-hidden="true"><img src="images/hacker.webp" alt="" width="740" height="493" decoding="async"></div>
+
+<header><div class="wrap nav">
+  <a class="brand" href="#top"><img src="images/favicon.png" alt="" width="30" height="30"> Xander</a>
+  <nav class="links"><a href="#team">Team</a><a href="#projects">Projects</a><a href="#join">Join</a><a id="ghLink" href="#" target="_blank" rel="noopener">GitHub</a></nav>
+  <button id="sndBtn" class="ibtn" aria-pressed="false" aria-label="Play background music" title="Play background music">🎵</button>
+  <button id="themeBtn" class="ibtn" aria-label="Toggle light or dark theme">🌓</button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap heroin">
+  <div>
+    <span class="tag"><i class="dot"></i> Live team dashboard</span>
+    <h1 id="title">Xander Development Society</h1>
+    <p id="tagline" class="lead"></p>
+    <div class="btns"><a class="btn p" href="#team">Meet the team</a><a class="btn" id="ghBtn" href="#" target="_blank" rel="noopener">Xander on GitHub</a></div>
+    <div class="stats">
+      <div><b id="sMembers">0</b><span>Members</span></div>
+      <div><b id="sLive">0</b><span>Portfolios live</span></div>
+      <div><b id="sRepos">0</b><span>Public repos</span></div>
+      <div><b id="sFollowers">0</b><span>GitHub followers</span></div>
+    </div>
+  </div>
+  <img class="logo" src="images/xander-logo.png" alt="Xander shield logo">
+</div></section>
+
+<section id="team"><div class="wrap">
+  <h2>The Team</h2>
+  <p class="sub">Click a card to open that member's portfolio. <span id="updated"></span></p>
+  <div class="tools"><input id="q" type="search" placeholder="Search by name, skill or role" aria-label="Search members"><div id="chips" class="fchips"></div></div>
+  <div class="grid" id="grid"></div>
+  <p id="none" class="empty" hidden>No members match your search.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Team Projects</h2>
+  <p class="sub">The latest public work from the team's GitHub account.</p>
+  <div class="grid" id="repos"></div>
+</div></section>
+
+<section id="join"><div class="wrap">
+  <h2>Join Xander</h2>
+  <p class="sub" id="joinText"></p>
+  <div class="btns"><a class="btn p" id="joinBtn" href="#" target="_blank" rel="noopener">Contact the team</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> Xander Development Society · Built with HTML, CSS and JavaScript</div></footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
