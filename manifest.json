@@ -11,12 +11,12 @@
   "theme_color": "#22c55e",
   "icons": [
     {
-      "src": "./images/xande-logo.png",
+      "src": "./images/x1.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./images/xander-logor.png",
+      "src": "./images/x.png",
       "sizes": "512x512",
       "type": "image/png"
     }
