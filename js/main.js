@@ -12,6 +12,7 @@
     get: k => { try { const v = JSON.parse(sessionStorage.getItem(k)); return v && Date.now() - v.t < 600000 ? v.d : null; } catch (e) { return null; } },
     set: (k, d) => { try { sessionStorage.setItem(k, JSON.stringify({ t: Date.now(), d })); } catch (e) {} }
   };
+  navigator.serviceWorker.register("./sw.js");
   const gh = async (path, fresh) => {
     const k = 'xg:' + path; if (!fresh) { const c = cache.get(k); if (c) return c; }
     try { const r = await fetch('https://api.github.com' + path, { headers: { Accept: 'application/vnd.github+json' } }); if (!r.ok) return null; const d = await r.json(); cache.set(k, d); return d; } catch (e) { return null; }
